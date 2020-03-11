@@ -14,7 +14,6 @@ public:
     Map(int width, int height, const std::vector<int>& channel) : width_(width), height_(height) {
         int N = channel.size();
         edge_.resize(N);
-        std::cout << edge_.size() << std::endl;
         for (int i = 0; i < N; ++i) {
             edge_[i].resize(N);
         }
